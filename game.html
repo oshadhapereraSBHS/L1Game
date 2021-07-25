@@ -13,7 +13,13 @@
         
         
         function mainloop() {
-          
+          colorRect(0,0,canvas.width,canvas.height,'black'); // bg
+  
+        }
+        
+         function colorRect(x,y,w,h,c){
+            canvasContext.fillStyle = c;
+            canvasContext.fillRect(x,y,w,h);
         }
     
     </script>
