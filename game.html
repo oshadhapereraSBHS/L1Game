@@ -23,6 +23,8 @@
         function mainloop() {
             colorRect(0,0,canvas.width,canvas.height,'black'); // bg
             drawImg(player, playerXpos, playerYpos, PLAYER_SIZE, PLAYER_SIZE); //player
+            
+            playerMove();
         }
         
          function colorRect(x,y,w,h,c){
@@ -32,6 +34,13 @@
         
         function drawImg (src, x, y, w,h) {
             canvasContext.drawImage(src, x, y, w, h)
+        }
+        
+        function playerMove() {
+            playerXpos += playerXspeed;
+            playerYpos += playerYspeed;
+            
+            
         }
     
     </script>
